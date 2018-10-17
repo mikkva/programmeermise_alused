@@ -29,9 +29,12 @@ def palindrom (text):
 
 def population(x):
     # arvutab mitu elaniku elab linnas, koodiloetavuse huvides on rolli järgi lahku löödud, saaks ka lihtsalt x+x*x+x*x*x
-    womenPopulation=x*x # naiste arv
-    childPopulation=womenPopulation*x # laste arv
-    totalPopulation=x+womenPopulation+childPopulation # kõikide elanike arv kokku
+    if x > 0:   
+        womenPopulation=x*x # naiste arv
+        childPopulation=womenPopulation*x # laste arv
+        totalPopulation=x+womenPopulation+childPopulation # kõikide elanike arv kokku
+    else:
+        totalPopulation=0
     return totalPopulation
 
 #Ülesanne 3
