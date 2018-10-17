@@ -60,6 +60,3 @@ def most_unique_string(string):
 
     # index funktsiooniga leian maximum pikkuse indexi ja tagastan selle sõna, index leiab alati esimese
     return words[((unical_charac_count.index(max(unical_charac_count))))]
-
-
-# ei muutnud midagi
